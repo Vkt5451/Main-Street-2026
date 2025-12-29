@@ -1,46 +1,46 @@
 const popularItems = [
   {
-    img: "../images/breakfast_bacon.png",
+    img: "images/bagel/breakfast_bacon.jpg",
     title: "Everything Bagel",
     desc: "Sesame, poppy, garlic, onion & salt"
   },
   {
-    img: "../images/breakfast_bacon.png",
+    img: "images/bagel/breakfast_bacon.jpg",
     title: "Sesame Bagel",
     desc: "Classic toasted sesame seeds"
   },
   {
-    img: "../images/breakfast_bacon.png",
+    img: "images/bagel/breakfast_bacon.jpg",
     title: "Blueberry Bagel",
     desc: "Sweet and fruity, perfect for breakfast"
   },
   {
-    img: "../images/breakfast_bacon.png",
+    img: "images/bagel/breakfast_bacon.jpg",
     title: "Cheddar Bacon Bagel",
     desc: "Savory cheddar with crispy bacon bits"
   },
   {
-    img: "../images/breakfast_bacon.png",
+    img: "images/bagel/breakfast_bacon.jpg",
     title: "Cinnamon Swirl Bagel",
     desc: "Warm cinnamon flavor with a sweet glaze"
   },
   {
-    img: "../images/breakfast_bacon.png",
+    img: "images/bagel/breakfast_bacon.jpg",
     title: "Jalapeño Bagel",
     desc: "Spicy kick with fresh jalapeños"
   },
   {
-    img: "../images/breakfast_bacon.png",
+    img: "images/bagel/breakfast_bacon.jpg",
     title: "Garlic Bagel",
     desc: "Bold garlic flavor, a fan favorite"
   },
   {
-    img: "../images/breakfast_bacon.png",
+    img: "images/bagel/breakfast_bacon.jpg",
     title: "Plain Bagel",
     desc: "Simple, classic, and perfect with any spread"
   },
   {
-    img: "../images/breakfast_bacon.png",
+    img: "images/bagel/breakfast_bacon.jpg",
     title: "Strawberry Bagel",
     desc: "Sweet strawberry bits baked inside"
   }
