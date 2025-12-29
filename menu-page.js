@@ -70,9 +70,9 @@ const menuData = [
       { name: "Breakfast Egg Ham Cheese Bagel", desc: "Bagel with ham, perfect for breakfast", price: "$8.25", image: "/images/bagel/breakfast_ham.jpg", optionsPreset: "breakfastBagel" },
       { name: "Breakfast Egg Sausage Cheese Bagel", desc: "Bagel with sausage, savory and delicious", price: "$8.25", image: "images/bagel/breakfast_sausage.jpg",optionsPreset: "breakfastBagel" },
       { name: "Breakfast Egg Bacon Cheese Bagel", desc: "Bagel with crispy bacon", price: "$8.25", image: "images/bagel/breakfast_bacon.jpg",optionsPreset: "breakfastBagel"},
-      { name: "Breakfast Egg Ham Cheese Croissant", desc: "Flaky croissant with ham", price: "$9.75", image: "images/crossaint_ham.jpg", optionsPreset: "breakfastBagel" },
-      { name: "Nova Lox Bagel", desc: "Bagel with smoked salmon", price: "$10.99", image: "images/nova_lox.jpg", optionsPreset: "breakfastBagel"},
-      { name: "Vietnamese Coffee", desc: "Rich and sweet iced coffee", price: "$6.50", image: "images/vietnamese_coffee.jpg", optionsPreset: "milkTeaToppings"}
+      { name: "Breakfast Egg Ham Cheese Croissant", desc: "Flaky croissant with ham", price: "$9.75", image: "images/sandwich/crossaint_ham.jpg", optionsPreset: "breakfastBagel" },
+      { name: "Nova Lox Bagel", desc: "Bagel with smoked salmon", price: "$10.99", image: "images/bagel/nova_lox.jpg", optionsPreset: "breakfastBagel"},
+      { name: "Vietnamese Coffee", desc: "Rich and sweet iced coffee", price: "$6.50", image: "images/drinks/vietnamese_coffee.jpg", optionsPreset: "milkTeaToppings"}
     ]
   },
   { category: "Bagels", items: [
@@ -111,16 +111,51 @@ const menuData = [
     ]
   },
 
-  { category: "Hot Drinks", items: [
-      { name: "Vietnamese Coffee", desc: "Rich and sweet iced coffee", price: "$1.75", image: "images/vietnamese_coffee.jpg" },
-      { name: "Sesame Milk Drink", desc: "Creamy sesame-flavored milk beverage", price: "$1.75", image: "images/sesame.jpg" }
-    ]
-  },
-  { category: "Cold Drinks", items: [
-      { name: "Vietnamese Coffee", desc: "Rich and sweet iced coffee", price: "$1.75", image: "images/vietnamese_coffee.jpg" },
-      { name: "Sesame Milk Drink", desc: "Creamy sesame-flavored milk beverage", price: "$1.75", image: "images/sesame.jpg" }
-    ]
-  },
+{ category: "Hot Drinks", items: [
+  { name: "Latte", desc: "16 oz hot latte", price: "$4.25", image: "images/drinks/latte.jpg" },
+  { name: "Mocha", desc: "16 oz Creamy hot mocha drink", price: "$5.25", image: "images/drinks/mocha.jpg" },
+  { name: "Hot Tea", desc: "16 ozFreshly brewed hot tea", price: "$3.50", image: "images/drinks/hot_tea.jpg" }
+]},
+{ category: "Iced Drinks", items: [
+  { name: "Vietnamese Coffee", desc: "Rich iced Vietnamese coffee", price: "$6.50", image: "images/drinks/vietnamese_coffee.jpg" },
+  { name: "Blended Latte", desc: "Iced latte blended with ice", price: "$6.00", image: "images/drinks/blended_latte.jpg" },
+  { name: "Blended Mocha", desc: "Chocolate mocha iced blended drink", price: "$6.00", image: "images/drinks/blended_mocha.jpg" },
+  { name: "Blended Vietnamese Coffee", desc: "Iced coffee with ice blended smooth", price: "$7.50", image: "images/drinks/vietnamese_coffee.jpg" },
+  { name: "Ice Black Vietnamese Coffee", desc: "Iced strong black coffee", price: "$4.50", image: "images/drinks/vietnamese_coffee.jpg" },
+  { name: "Iced Mocha", desc: "Chocolate mocha on ice", price: "$5.25", image: "images/drinks/vietnamese_coffee.jpg" },
+  { name: "Iced Latte", desc: "Iced latte with smooth milk", price: "$4.25", image: "images/drinks/vietnamese_coffee.jpg" }
+]},
+{ category: "Smoothies", items: [
+  { name: "Banana Berry Smoothie", desc: "Banana and mixed berries blended", price: "$6.50", image: "images/drinks/banana_berry_smoothie.jpg", optionsPreset: "milkTeaToppings"},
+  { name: "Berry Sunrise Smoothie", desc: "Strawberry and berry blend", price: "$6.50", image: "images/drinks/banana_berry_smoothie.jpg", optionsPreset: "milkTeaToppings"},
+  { name: "Chocolate Shake Smoothie", desc: "Chocolate smoothie shake", price: "$6.50", image: "images/drinks/chocolate_shake_smoothie.jpg" , optionsPreset: "milkTeaToppings"},
+  { name: "Mocha Blast Smoothie", desc: "Chocolate coffee smoothie", price: "$6.50", image: "images/drinks/mocha_blast_smoothie.jpg" , optionsPreset: "milkTeaToppings"},
+  { name: "Jamaican Dream Smoothie", desc: "Tropical fruit smoothie", price: "$6.50", image: "images/drinks/mango_snow_smoothie.jpg" , optionsPreset: "milkTeaToppings"},
+  { name: "Lemony Raspberry Smoothie", desc: "Lemon and raspberry blended", price: "$6.50", image: "images/drinks/lemony_rasberry_smoothie.jpg", optionsPreset: "milkTeaToppings"},
+  { name: "Orange Dream Smoothie", desc: "Orange citrus smoothie", price: "$6.50", image: "images/drinks/mango_snow_smoothie.jpg" , optionsPreset: "milkTeaToppings"},
+  { name: "Oreo Blast Smoothie", desc: "Chocolate Oreo blended smoothie", price: "$6.50", image: "images/drinks/coconut_snow_smoothie.jpg" , optionsPreset: "milkTeaToppings"},
+  { name: "Peanut Butter Smoothie", desc: "Peanut butter smoothie blend", price: "$6.50", image: "images/drinks/coconut_snow_smoothie.jpg" , optionsPreset: "milkTeaToppings"},
+  { name: "Purple Rain Smoothie", desc: "Berry and grape smoothie", price: "$6.50", image: "images/drinks/purple_rain_smoothie.jpg" , optionsPreset: "milkTeaToppings"},
+  { name: "Lava Flow Smoothie", desc: "Strawberry and banana smoothie", price: "$6.50", image: "images/drinks/lava_flow_smoothie.jpg", optionsPreset: "milkTeaToppings"}
+]},
+{ category: "Snow Smoothies", items: [
+  { name: "Honeydew Snow Smoothie", desc: "Honeydew blended with ice", price: "$6.50", image: "images/drinks/honeydew_snow_smoothie.jpg", optionsPreset: "milkTeaToppings"},
+  { name: "Mango Snow Smoothie", desc: "Fresh mango blended icy", price: "$6.50", image: "images/drinks/mango_snow_smoothie.jpg" , optionsPreset: "milkTeaToppings"},
+  { name: "Coconut Snow Smoothie", desc: "Coconut blended icy smoothie", price: "$6.50", image: "images/drinks/coconut_snow_smoothie.jpg", optionsPreset: "milkTeaToppings"},
+  { name: "Avocado Snow Smoothie", desc: "Creamy avocado icy blend", price: "$6.50", image: "images/drinks/avacado_snow_smoothie.jpg" , optionsPreset: "milkTeaToppings"},
+  { name: "Coffee Snow Smoothie", desc: "Iced coffee blended with ice", price:"$6.50", image: "images/drinks/coffee_snow_smoothie.jpg" , optionsPreset: "milkTeaToppings"},
+  { name: "Matcha Green Tea Snow Smoothie", desc: "Iced matcha green tea blend", price:"$6.50", image: "images/drinks/matcha_green_tea_snow_smoothie.jpg" , optionsPreset: "milkTeaToppings"},
+  { name: "Taro Snow Smoothie", desc: "Sweet taro blended icy", price: "$6.50", image: "images/drinks/taro_snow_smoothie.jpg" , optionsPreset: "milkTeaToppings"},
+  { name: "Thai Tea Snow Smoothie", desc: "Iced Thai tea blend", price: "$6.50", image: "images/drinks/thai_tea_snow_smoothie.jpg" , optionsPreset: "milkTeaToppings"}
+]},
+{ category: "Bubble Milk Tea", items: [
+  { name: "Thai Milk Tea", desc: "Classic Thai milk tea with tapioca", price: "$5.75", image: "images/drinks/thai_tea_snow_smoothie.jpg" , optionsPreset: "milkTeaToppings"},
+  { name: "Milk Tea", desc: "Smooth milk tea with boba", price: "$5.75", image: "images/drinks/milk_tea.jpg" , optionsPreset: "milkTeaToppings"},
+  { name: "Coconut Milk Tea", desc: "Coconut flavored milk tea", price: "$5.75", image: "images/drinks/coconut_milk_tea.jpg" , optionsPreset: "milkTeaToppings"},
+  { name: "Coffee Milk Tea", desc: "Coffee infused milk tea", price: "$5.75", image: "images/drinks/coffee_milk_tea.jpg" , optionsPreset: "milkTeaToppings"},
+  { name: "Taro Milk Tea", desc: "Sweet taro milk tea with boba", price: "$5.75", image: "images/drinks/taro_milk_tea.jpg" , optionsPreset: "milkTeaToppings"},
+  { name: "Matcha Milk Tea", desc: "Iced matcha milk tea with boba", price: "$5.75", image: "images/drinks/matcha_green_tea_snow_smoothie.jpg" , optionsPreset: "milkTeaToppings"}
+]},
 
 ];
 

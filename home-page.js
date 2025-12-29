@@ -1,50 +1,15 @@
 const popularItems = [
-  {
-    img: "images/bagel/breakfast_bacon.jpg",
-    title: "Everything Bagel",
-    desc: "Sesame, poppy, garlic, onion & salt"
-  },
-  {
-    img: "images/bagel/breakfast_bacon.jpg",
-    title: "Sesame Bagel",
-    desc: "Classic toasted sesame seeds"
-  },
-  {
-    img: "images/bagel/breakfast_bacon.jpg",
-    title: "Blueberry Bagel",
-    desc: "Sweet and fruity, perfect for breakfast"
-  },
-  {
-    img: "images/bagel/breakfast_bacon.jpg",
-    title: "Cheddar Bacon Bagel",
-    desc: "Savory cheddar with crispy bacon bits"
-  },
-  {
-    img: "images/bagel/breakfast_bacon.jpg",
-    title: "Cinnamon Swirl Bagel",
-    desc: "Warm cinnamon flavor with a sweet glaze"
-  },
-  {
-    img: "images/bagel/breakfast_bacon.jpg",
-    title: "Jalapeño Bagel",
-    desc: "Spicy kick with fresh jalapeños"
-  },
-  {
-    img: "images/bagel/breakfast_bacon.jpg",
-    title: "Garlic Bagel",
-    desc: "Bold garlic flavor, a fan favorite"
-  },
-  {
-    img: "images/bagel/breakfast_bacon.jpg",
-    title: "Plain Bagel",
-    desc: "Simple, classic, and perfect with any spread"
-  },
-  {
-    img: "images/bagel/breakfast_bacon.jpg",
-    title: "Strawberry Bagel",
-    desc: "Sweet strawberry bits baked inside"
-  }
+  { img: "/images/bagel/breakfast_ham.jpg", title: "Breakfast Ham Egg Cheese Bagel", desc: "Bagel with ham, egg, and cheese" },
+  { img: "/images/bagel/breakfast_bacon.jpg", title: "Breakfast Bacon Bagel", desc: "Bagel with crispy bacon and egg" },
+  { img: "/images/bagel/breakfast_sausage.jpg", title: "Breakfast Sausage Bagel", desc: "Bagel with savory sausage and egg" },
+  { img: "/images/sandwich/crossaint_ham.jpg", title: "Ham Croissant Sandwich", desc: "Flaky croissant with ham and cheese" },
+  { img: "/images/bagel/nova_lox.jpg", title: "Nova Lox Bagel", desc: "Bagel with smoked salmon and cream cheese" },
+  { img: "/images/sandwich/turkey_bacon_avacado_sandwich.jpg", title: "Turkey Bacon Avocado Sandwich", desc: "Sandwich with turkey, bacon, and avocado" },
+  { img: "/images/drinks/thai_tea_snow_smoothie.jpg", title: "Thai Tea Snow Smoothie", desc: "Iced Thai tea blended into a smoothie" },
+  { img: "/images/drinks/lava_flow_smoothie.jpg", title: "Lava Flow Smoothie", desc: "Strawberry and banana blended smoothie" },
+  { img: "/images/drinks/vietnamese_coffee.jpg", title: "Vietnamese Coffee", desc: "Rich and sweet iced coffee" }
 ];
+
 
 // Target the grid container
 const grid = document.getElementById("popular-grid");
