@@ -200,7 +200,10 @@ const menuData = [
       { name: "Breakfast Egg Bacon Cheese Bagel", desc: "Bagel with crispy bacon, cheese and egg", price: "$8.25", image: "images/bagel/breakfast_bacon.jpg",optionsPreset: "breakfastBagel"},
       { name: "Breakfast Egg with Meat & Cheese Croissant", desc: "Flaky croissant with egg, cheese and meat", price: "$9.75", image: "images/sandwich/crossaint_ham.jpg", optionsPreset: "breakfastCroissant" },
       { name: "Nova Lox Bagel", desc: "Bagel with smoked salmon and cream cheese topped with onions and tomatoes", price: "$10.99", image: "images/bagel/nova_lox.jpg", optionsPreset: "breakfastBagel"},
-      { name: "Vietnamese Coffee", desc: "Rich and sweet iced coffee", price: "$6.50", image: "images/drinks/vietnamese_coffee.jpg", optionsPreset: "milkTeaToppings"}
+      { name: "Turkey Bacon Avocado Sandwich", desc: "Turkey, bacon, avocado, and vegetables on fresh bread", price: "$9.75", image: "images/sandwich/turkey_bacon_avacado_sandwich.jpg",optionsPreset: "sandwich"},
+      { name: "Vietnamese Coffee", desc: "Rich and sweet iced coffee", price: "$6.50", image: "images/drinks/vietnamese_coffee.jpg", optionsPreset: "milkTeaToppings"},
+      { name: "Lava Flow Smoothie", desc: "Strawberry and banana smoothie", price: "$6.50", image: "images/drinks/lava_flow_smoothie.jpg", optionsPreset: "milkTeaToppings"},
+      { name: "Thai Tea Snow Smoothie", desc: "Iced Thai tea blend", price: "$6.50", image: "images/drinks/thai_tea_snow_smoothie.jpg" , optionsPreset: "milkTeaToppings"}
     ]
   },
   { category: "Bagels", items: [
@@ -533,7 +536,7 @@ document.addEventListener("DOMContentLoaded", () => {
       specialDiv.style.marginTop = "10px";
       specialDiv.innerHTML = `
         <label for="special-instructions">Special instructions:</label>
-        <textarea id="special-instructions" rows="3" style="width:100%;"></textarea>
+        <textarea id="special-instructions" rows="3" style="width:98%;"></textarea>
       `;
       modalOptions.appendChild(specialDiv);
 
