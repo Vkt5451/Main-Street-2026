@@ -651,7 +651,7 @@ addToCartBtn.addEventListener("click", () => {
       cartItemsContainer.appendChild(itemDiv);
     });
 
-    cartTotalEl.textContent = `Total: $${total.toFixed(1)}`;
+    cartTotalEl.textContent = `Total: $${total.toFixed(2)}`;
   }
 
   // Cart quantity buttons
