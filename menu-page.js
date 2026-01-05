@@ -699,8 +699,6 @@ addToCartBtn.addEventListener("click", () => {
     if(e.target===cartModal) cartModal.style.display="none";
   };
 
-
-
   const checkoutBtn = document.getElementById("checkout-btn");
 
   checkoutBtn.addEventListener("click", async () => {
@@ -719,11 +717,24 @@ addToCartBtn.addEventListener("click", () => {
     console.log("Items for Stripe:", itemsForStripe);
 
     try {
-      const response = await fetch("https://main-street-2026-backend.vercel.app/api/create-checkout-session", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ items: itemsForStripe })
-      });
+      const response = await fetch(
+        "https://main-street-2026-backend.vercel.app/api/create-checkout-session",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            items: cart.map(item => ({
+              name: item.name,
+              price: parseFloat(item.price.replace("$", "")),
+              quantity: item.quantity || 1,
+              options: item.options,
+              specialInstructions: item.specialInstructions,
+            })),
+            customer_email: "test@example.com", // or get from form input
+          }),
+        }
+      );
+
 
       const data = await response.json();
 
